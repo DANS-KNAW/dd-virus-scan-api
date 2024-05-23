@@ -29,7 +29,7 @@
     <artifactId>dd-virus-scan-api</artifactId>
     <version>0.1.0-SNAPSHOT</version>
 
-    <name>Dd Virus Scan Api</name>
+    <name>DD Virus Scan Api</name>
     <url>https://github.com/DANS-KNAW/dd-virus-scan-api</url>
     <description>Service for scanning Dataverse datasets for virus</description>
     <inceptionYear>2024</inceptionYear>
