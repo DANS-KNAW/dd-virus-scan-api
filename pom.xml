@@ -33,6 +33,11 @@
     <description>Service for scanning Dataverse datasets for virus</description>
     <inceptionYear>2024</inceptionYear>
 
+    <properties>
+        <dans-build-resources-maven-plugin.version>0.8.0</dans-build-resources-maven-plugin.version>
+    </properties>
+
+
     <scm>
         <developerConnection>scm:git:ssh://github.com/DANS-KNAW/dd-virus-scan-api</developerConnection>
         <tag>HEAD</tag>
