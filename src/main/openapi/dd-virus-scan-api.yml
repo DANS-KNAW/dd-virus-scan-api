@@ -34,7 +34,7 @@ paths:
     get:
       summary: Returns a description of the service.
       responses:
-        200:
+        '200':
           description: description of the service
           content:
             text/plain:
@@ -43,7 +43,61 @@ paths:
                 description: a plain text, human readable description of the service
                 example: |
                   Virus Scan API Running (v${project.version})
-
+  /invoke:
+    post:
+      summary: Invoke a virus scan
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/PrePublishWorkflowPayload'
+      responses:
+        '200':
+          description: Virus scan invoked successfully
+          content:
+            application/json:
+              schema:
+                type: object
+        '400':
+          description: Invalid input
+  /rollback:
+    post:
+      summary: Rollback a previous operation
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+      responses:
+        '200':
+          description: Rollback successful
+          content:
+            application/json:
+              schema:
+                type: object
+        '400':
+          description: Invalid input
 
 components:
-  # Reusable schemas
+  schemas:
+    PrePublishWorkflowPayload:
+      type: object
+      properties:
+        invocationId:
+          type: string
+        globalId:
+          type: string
+        datasetId:
+          type: string
+        majorVersion:
+          type: string
+        minorVersion:
+          type: string
+      required:
+        - invocationId
+        - globalId
+        - datasetId
+        - majorVersion
+        - minorVersion
