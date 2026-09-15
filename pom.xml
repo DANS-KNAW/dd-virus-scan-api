@@ -30,7 +30,7 @@
 
     <name>DD Virus Scan Api</name>
     <description>Service for scanning Dataverse datasets for virus</description>
-    <url>https://github.com/DANS-KNAW/dd-virus-scan-api</url>
+    <url>https://dans-knaw.github.io/dd-virus-scan-api</url>
     <inceptionYear>2024</inceptionYear>
 
     <scm>
