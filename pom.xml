@@ -22,15 +22,15 @@
     <parent>
         <groupId>nl.knaw.dans</groupId>
         <artifactId>dd-parent</artifactId>
-        <version>1.12.0</version>
+        <version>3.0.0-SNAPSHOT</version>
     </parent>
 
     <artifactId>dd-virus-scan-api</artifactId>
     <version>0.2.1-SNAPSHOT</version>
 
     <name>DD Virus Scan Api</name>
-    <url>https://github.com/DANS-KNAW/dd-virus-scan-api</url>
     <description>Service for scanning Dataverse datasets for virus</description>
+    <url>https://github.com/DANS-KNAW/dd-virus-scan-api</url>
     <inceptionYear>2024</inceptionYear>
 
     <scm>
@@ -41,8 +41,8 @@
     <build>
         <resources>
             <resource>
-                <directory>src/main/openapi</directory>
                 <filtering>true</filtering>
+                <directory>src/main/openapi</directory>
             </resource>
         </resources>
         <plugins>
@@ -60,51 +60,4 @@
             </plugin>
         </plugins>
     </build>
-
-    <repositories>
-        <repository>
-            <id>dans-releases</id>
-            <releases>
-                <enabled>true</enabled>
-            </releases>
-            <snapshots>
-                <enabled>false</enabled>
-            </snapshots>
-            <url>https://maven.dans.knaw.nl/releases/</url>
-        </repository>
-        <repository>
-            <id>dans-snapshots</id>
-            <releases>
-                <enabled>false</enabled>
-            </releases>
-            <snapshots>
-                <enabled>true</enabled>
-            </snapshots>
-            <url>https://maven.dans.knaw.nl/snapshots/</url>
-        </repository>
-    </repositories>
-
-    <pluginRepositories>
-        <pluginRepository>
-            <id>dans-releases</id>
-            <releases>
-                <enabled>true</enabled>
-            </releases>
-            <snapshots>
-                <enabled>false</enabled>
-            </snapshots>
-            <url>https://maven.dans.knaw.nl/releases/</url>
-        </pluginRepository>
-        <pluginRepository>
-            <id>dans-snapshots</id>
-            <releases>
-                <enabled>false</enabled>
-            </releases>
-            <snapshots>
-                <enabled>true</enabled>
-            </snapshots>
-            <url>https://maven.dans.knaw.nl/snapshots/</url>
-        </pluginRepository>
-    </pluginRepositories>
-
 </project>
