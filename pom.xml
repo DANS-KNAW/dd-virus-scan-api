@@ -26,7 +26,7 @@
     </parent>
 
     <artifactId>dd-virus-scan-api</artifactId>
-    <version>0.2.1</version>
+    <version>0.2.2-SNAPSHOT</version>
 
     <name>DD Virus Scan Api</name>
     <description>Service for scanning Dataverse datasets for virus</description>
@@ -36,7 +36,7 @@
     <scm>
         <connection>scm:git:https://github.com/DANS-KNAW/dd-virus-scan-api</connection>
         <developerConnection>scm:git:ssh://github.com/DANS-KNAW/dd-virus-scan-api</developerConnection>
-        <tag>v0.2.1</tag>
+        <tag>HEAD</tag>
         <url>https://github.com/DANS-KNAW/dd-virus-scan-api</url>
     </scm>
 
