@@ -38,12 +38,9 @@ paths:
         '200':
           description: description of the service
           content:
-            text/plain:
+            application/json:
               schema:
-                type: string
-                description: a plain text, human readable description of the service
-                example: |
-                  Virus Scan API Running (v${project.version})
+                $ref: '#/components/schemas/AppInfo'
   /invoke:
     post:
       operationId: invokePost
@@ -149,6 +146,13 @@ paths:
 
 components:
   schemas:
+    AppInfo:
+      type: object
+      properties:
+        name:
+          type: string
+        version:
+          type: string
     PrePublishWorkflowPayload:
       type: object
       properties:
